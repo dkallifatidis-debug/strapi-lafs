@@ -1,4 +1,5 @@
 module.exports = [
+  'global::no-admin-cache',
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
