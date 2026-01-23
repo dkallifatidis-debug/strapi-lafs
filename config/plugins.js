@@ -11,10 +11,10 @@ module.exports = ({ env }) => ({
             accessKeyId: env("AWS_ACCESS_KEY_ID"),
             secretAccessKey: env("AWS_SECRET_ACCESS_KEY"),
           },
-          forcePathStyle: true,
         },
         params: {
           Bucket: env("AWS_BUCKET"),
+          ACL: 'public-read',
         },
       },
     },
