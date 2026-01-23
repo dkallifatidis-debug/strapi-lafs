@@ -15,6 +15,7 @@ module.exports = ({ env }) => [
             "blob:",
             "market-assets.strapi.io",
             env("AWS_ENDPOINT"),
+            env("AWS_CDN_URL", "https://pub-515f8a574da64a9b814056de131b7137.r2.dev"),
           ],
           "media-src": [
             "'self'",
@@ -22,6 +23,7 @@ module.exports = ({ env }) => [
             "blob:",
             "market-assets.strapi.io",
             env("AWS_ENDPOINT"),
+            env("AWS_CDN_URL", "https://pub-515f8a574da64a9b814056de131b7137.r2.dev"),
           ],
           upgradeInsecureRequests: null,
         },
