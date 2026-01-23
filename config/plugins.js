@@ -3,9 +3,9 @@ module.exports = ({ env }) => ({
     config: {
       provider: "aws-s3",
       providerOptions: {
+        baseUrl: env("AWS_CDN_URL", "https://kalva-mediar2.kalva.gr"),
         s3Options: {
           endpoint: env("AWS_ENDPOINT"),
-          baseUrl: env("AWS_CDN_URL", "https://kalva-mediar2.kalva.gr"),
           region: env("AWS_REGION", "auto"),
           credentials: {
             accessKeyId: env("AWS_ACCESS_KEY_ID"),
